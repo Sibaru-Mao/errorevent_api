@@ -59,7 +59,7 @@ build_test_image:
     - production
     - /^pre-production.*$/
   stage: build_for_test
-  image: harbor.wistron.com/base_image/docker:stable
+  image: harbor.wks.wistron.com.cn/base_image/docker:stable
   tags:
     - wks-runner01
   variables:
