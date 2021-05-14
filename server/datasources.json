@@ -1,0 +1,24 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mariaDB": {
+    "host": "172.30.28.11",
+    "port": 3306,
+    "url": "",
+    "database": "teamx",
+    "password": "WkT@M2017",
+    "name": "mariaDB",
+    "user": "teamxuser",
+    "connector": "mysql",
+    "connectTimeout": 60000,
+    "acquireTimeout": 60000
+  },
+  "data":{
+    "host":"172.30.30.103",
+    "port":3306,
+    "name": "data",
+    "connector": "memory"
+  }
+}
