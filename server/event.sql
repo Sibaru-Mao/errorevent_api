@@ -42,4 +42,4 @@ AND A.alertType <> 1
 AND A.plant  ='Plant'
 AND A.STATUS = 'StatuS'
 AND A.LEVEL = 'Level'
-AND FROM_UNIXTIME(ROUND(A.STIME / 1000, 0), '%Y') = year(NOW())
+AND FROM_UNIXTIME(round(eventTime/1000,0))>=date_format('2021-05-10','%Y-%m-%d')
