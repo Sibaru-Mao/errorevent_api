@@ -66,10 +66,10 @@ build_test_image:
 
   script:
     - echo "this is docker image packing for TEST"
-    - docker build -t ${BUILD_IMAGE_NAME}:1.0.2 --rm=true .
-    - docker tag ${BUILD_IMAGE_NAME}:1.0.2 ${HARBOR_URL}/${HARBOR_PROJECT}/${BUILD_IMAGE_NAME}:1.0.2
+    - docker build -t ${BUILD_IMAGE_NAME}:1.0.3 --rm=true .
+    - docker tag ${BUILD_IMAGE_NAME}:1.0.3 ${HARBOR_URL}/${HARBOR_PROJECT}/${BUILD_IMAGE_NAME}:1.0.3
     - echo "${HARBOR_PASSWORD}" | docker login -u "${HARBOR_USER}" --password-stdin ${HARBOR_URL}
-    - docker push ${HARBOR_URL}/${HARBOR_PROJECT}/${BUILD_IMAGE_NAME}:1.0.2
+    - docker push ${HARBOR_URL}/${HARBOR_PROJECT}/${BUILD_IMAGE_NAME}:1.0.3
 
 docker-build:
   only:
