@@ -55,6 +55,7 @@ AND LEVEL IN ('Level')
 AND STATUS IN ('Status')
 AND alertType <> 1
 AND pic <> ""
+AND A.todmc <> 0
 AND FROM_UNIXTIME(round(STime/1000,0))>=date_format('2021-05-10','%Y-%m-%d')
 GROUP BY LTRIM(pic), plant) A) B
 GROUP BY PIC

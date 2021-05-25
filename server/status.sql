@@ -21,5 +21,6 @@ AND TRIM(A.PIC) LIKE 'user%'
 AND A.plant IN ('Plant')
 AND A.STATUS IN ('Status')
 AND A.LEVEL IN ('Level')
+AND A.todmc <> 0
 AND FROM_UNIXTIME(round(A.STime/1000,0))>=date_format('2021-05-10','%Y-%m-%d')
 ORDER BY A.STATUS, A.LEVEL, A.STime

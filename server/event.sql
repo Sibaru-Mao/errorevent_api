@@ -42,4 +42,5 @@ AND A.alertType <> 1
 AND A.plant  ='Plant'
 AND A.STATUS = 'StatuS'
 AND A.LEVEL = 'Level'
+AND A.todmc <> 0
 AND FROM_UNIXTIME(round(A.STime/1000,0))>=date_format('2021-05-10','%Y-%m-%d')
